@@ -1,0 +1,31 @@
+<MessageCollection>
+
+    <Plugin>
+        <ShortDescription>Exigen EIS findbugs plugin</ShortDescription>
+        <Details>
+            <![CDATA[
+            <p>
+                This plugin contains custom EIS findbugs detectors.
+            </p>
+            ]]>
+        </Details>
+    </Plugin>
+    
+    
+    
+    <Detector class="com.exigen.ipb.detectors.DeprecatedMethodInvocationCheck">
+		<Details>
+			<![CDATA[<p>Detects invocations of the deprecated methods.]]>
+		</Details>
+	</Detector>
+    
+	<BugPattern type="EIS_DEPRECATED_METHOD_INVOCATION">
+		<ShortDescription>Invocation of deprecated method</ShortDescription>
+		<LongDescription>Invocation of deprecated method found at {1} {2}.</LongDescription>
+		<Details>
+			<![CDATA[<p>Once deprecated, a method should no longer be used as it means that the method might be removed sooner or later.</p>]]>
+		</Details>
+	</BugPattern>
+	
+	<BugCode abbrev="EIS">Custom EIS rules</BugCode>
+</MessageCollection>

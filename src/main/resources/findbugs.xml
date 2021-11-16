@@ -1,0 +1,4 @@
+<FindbugsPlugin>
+	<Detector class="com.exigen.ipb.detectors.DeprecatedMethodInvocationCheck" />
+	<BugPattern type="EIS_DEPRECATED_METHOD_INVOCATION" abbrev="EIS" category="CORRECTNESS"/>
+</FindbugsPlugin>
